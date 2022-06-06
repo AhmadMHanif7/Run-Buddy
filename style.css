@@ -1,25 +1,49 @@
+/* This reomoves the default styles and adds formatting to all elements */
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     /* more on this crazy alphanumerical value in a minute! */
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
   }
 
+header{
+  padding: 20px 35px;
+  background-color: #39a6b2;
+}
 
 header h1 {
     font-weight: bold;
-    padding: 20px 35px;
     font-size: 36px;
     color: #fce138;
     margin: 0;
-    background-color: #39a6b2;
+    display: inline;
   }
-  
-  header a {
-    color: #fce138;
-    background-color: #39a6b2;
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0;
-    padding: 1px 100px;
-    position: inherit;
-  }
+
+header a {
+  text-decoration: none;
+  color: #fce138;
+}
+
+header nav{
+  float: right;
+  margin: 7px;
+}
+
+header ul li {
+  list-style: none;
+  font-size: 20px;
+  color: #fce138;
+  text-decoration: none;
+  display: inline;
+}
+
+header ul li a{
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 22px;
+}
